@@ -1,0 +1,61 @@
+{
+  "yarn": "yarn add --dev nextTwThemer",
+  "npm": "npm install --save-dev nextTwThemer",
+  "pnpm": "pnpm i --save-dev nextTwThemer",
+  "nextThemes": [
+    "import { ThemeProvider } from 'next-themes';",
+    "import { ReactNode } from 'react';",
+    "...",
+    "",
+    "interface RootLayoutProps {",
+    "  children: ReactNode;",
+    "}",
+    "",
+    "export default function RootLayout({ children }: RootLayoutProps) {",
+    "  return (",
+    "    <html lang='en' suppressHydrationWarning>",
+    "      <body id='root-layout'>",
+    "        <ThemeProvider>{children}</ThemeProvider>",
+    "      </body>",
+    "    </html>",
+    "  );",
+    "}"
+  ],
+  "tailwindConfig": [
+    "import type { Config } from 'tailwindcss';",
+    "import mergeTwConfig from 'npm-github-starter/twConfig';",
+    "",
+    "const customConfig: Config = {",
+    "...",
+    "};",
+    "",
+    "const config: Config = mergeTwConfig(customConfig);",
+    "export default config;"
+],
+  "addThemerComponent": [
+    "import NextTailwindThemer from \"../../package/index\";",
+    "...",
+    " ",
+    "const Header = () => {",
+    "  return (",
+    "    <header  ...>",
+    "        <Logo ... />",
+    "        <nav ... />",
+    "        <NextTailwindThemer />",
+    "    </header>",
+    "  );",
+    "};",
+    "",
+    "export default Header;"
+  ],
+  "currentButton": [
+    "<button className=\"text-slate-900 bg-emerald-200 hover:bg-emerald-50 ...\">",
+    "  Click me",
+    "</button>"
+  ],
+  "updatedButton": [
+    "<button className=\"text-slate-900 bg-primary hover:bg-secondary ...\">",
+    "  Click me",
+    "</button>"
+  ]
+}

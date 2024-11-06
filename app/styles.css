@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+pre {
+    font-size: 16px;
+}
+
+.hero {
+    box-shadow: 0px -29px 30px -13px hsl(var(--twc-secondary)) inset;
+    -webkit-box-shadow: 0px -29px 30px -13px hsl(var(--twc-secondary)) inset;
+    -moz-box-shadow: 0px -29px 30px -13px hsl(var(--twc-secondary)) inset;
+    background-color: hsl(var(--twc-primary));
+    opacity: 1;
+    background-image: radial-gradient(hsl(var(--twc-secondary)) 1px, hsl(var(--twc-primary)) 1px);
+    background-size: 10px 10px;
+    text-shadow: 3px 2px 0px hsl(var(--twc-secondary));
+}
+
+.hero-loading {
+    box-shadow: 0px 0px 18px 6px hsl(var(--twc-secondary)) inset;
+    -webkit-box-shadow: 0px 0px 18px 6px hsl(var(--twc-secondary)) inset;
+    -moz-box-shadow: 0px 0px 18px 6px hsl(var(--twc-secondary)) inset;
+    background-color: hsl(var(--twc-primary));
+    opacity: 1;
+    background-image: radial-gradient(hsl(var(--twc-secondary)) 1px, hsl(var(--twc-primary)) 1px);
+    background-size: 10px 10px;
+    color: #444444;
+    text-shadow: 3px 2px 0px hsl(var(--twc-secondary));
+}
+
+.copy-to-clipboard-button[data-copy-state="copy"] {
+    background-color: black !important;
+    color: hsl(var(--twc-primary)) !important;
+    border: 1px solid hsl(var(--twc-primary)) !important;
+    margin: 2px 6px 0 0 !important;
+    padding: 4px 8px !important;
+    border-radius: 999px !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
+}
+
+.copy-to-clipboard-button[data-copy-state="copy"]:hover {
+    background-color: hsl(var(--twc-secondary)) !important;
+    color: black !important;
+    border: 1px solid hsl(var(--twc-secondary)) !important;
+}
+
+.copy-to-clipboard-button[data-copy-state="copy-success"] {
+    background-color: transparent !important;
+    color: hsl(var(--twc-secondary)) !important;
+    border: 1px solid transparent !important;
+    margin: 2px 6px 0 0 !important;
+    padding: 4px 8px !important;
+    border-radius: 999px !important;
+    box-shadow: none !important;
+    transition-property: all !important;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1) !important;
+    transition-duration: 150ms !important;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    border-radius: 0.25rem !important;
+}
+
+.with-tabs :not(pre)>code[class*="language-"],
+.with-tabs pre[class*="language-"] {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+}
+
+.with-example :not(pre)>code[class*="language-"],
+.with-example pre[class*="language-"] {
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* In your styles.css or a CSS module */
+.text-sun {
+    display: none;
+}
+
+.dark .text-sun {
+    display: none;
+}
+
+.light .text-sun {
+    display: inline;
+}
+
+.text-moon {
+    display: none;
+}
+
+.dark .text-moon {
+    display: inline;
+}
+
+.light .text-moon {
+    display: none;
+}
