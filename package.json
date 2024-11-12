@@ -1,8 +1,8 @@
 {
-  "name": "npm-github-starter",
+  "name": "next-tw-themer",
   "license": "MIT",
   "version": "0.1.0",
-  "description": "Some Starter template for publishing react library to npm through Github",
+  "description": "A Next.js component that enables your users to pick their own color theme.",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",

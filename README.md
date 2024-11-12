@@ -1,19 +1,19 @@
-# React Library Starter
+# Next Tailwind Themer
 
-Starter template for your next react typescript library. Complete with changeset, tsup, and tailwind with prettier-plugin. Publish to npm the right and easy way.
+A component that enables a user-defined color scheme for Next.js & Tailwind CSS Apps
 
-## Setup
+## Features
 
-1. Go to npm and create your access token with type of "Publish" or "Automation". Copy the token.
-2. Go to your repo, click on "Settings" => "Secrets and variables" => "Actions" => "New repository secret" then create token named "NPM_TOKEN" and paste token from step 1.
-3. Go to your repo, click on "Settings" => "Actions" => "General" then make sure Workflow permissions is set to "Read and write permissions" and check "Allow Github Actions to create and approve pull requests."
+1. Enables your users to define a color scheme for your app
+2. Users can select a recurring color theme to be applied on return visits using the browser's localStorage
+3. Or, they can set the color theme to `Random` and enjoy a new, randomly picked color on each site visit, or on browser refresh
+4. Includes a dark/light/system mode toggle with the next-themes package.
+5. Default Tailwind color palette automatically adjusts when switching between light and dark modes to protect contrast ratios and ensure accessibility
 
-## How to use
+[📖 &nbsp;Read more](https://jamescolvard.com/)
 
-Create your package in package/index. Then import and test from src/App.
+## License
 
-Run `pnpm changeset` then push to your Github and workflow will create a PR for you to merge. Once you merge, your package will be automatically published to npm.
+[MIT License](./LICENSE)
 
-Or run `pnpm release` to publish directly from your command line. Remember to login with `npm login` and update version property in package.json.
-
-## Video tutorial from [Matt Pocock](https://www.youtube.com/watch?v=eh89VE3Mk5g)
+Copyright (c) JamesColvard.com
