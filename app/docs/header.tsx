@@ -22,7 +22,7 @@ const Header = () => {
             <span
               className={`${oswald.className} text-gray-500 antialiased dark:text-gray-200`}
             >
-              NextTwTheme
+              NextTwThemer
             </span>
           </h1>
         </div>
