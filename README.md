@@ -10,7 +10,7 @@ A component that enables a user-defined color scheme for Next.js & Tailwind CSS 
 4. Includes a dark/light/system mode toggle with the next-themes package.
 5. Default Tailwind color palette automatically adjusts when switching between light and dark modes to protect contrast ratios and ensure accessibility
 
-[📖 &nbsp;Read more](https://jamescolvard.com/)
+[📖 &nbsp;Read more](https://next-tw-themer.vercel.app/)
 
 ## License
 
