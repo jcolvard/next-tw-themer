@@ -29,7 +29,10 @@ const Header = () => {
         <nav className="flex ">
           <ul className="flex items-center">
             <li className="flex-1">
-              <button className="duration-900 subpixel-antialiasedmr-3 group mr-4 flex items-center rounded-full border border-primary bg-transparent px-2 py-1 text-primary outline-none transition-all ease-in-out hover:border-secondary hover:bg-secondary hover:text-white focus:shadow-focus focus:shadow-secondary dark:hover:text-gray-900">
+              <a
+                href="https://github.com/jcolvard/next-tw-themer"
+                className="duration-900 subpixel-antialiasedmr-3 group mr-4 flex items-center rounded-full border border-primary bg-transparent px-2 py-1 text-primary outline-none transition-all ease-in-out hover:border-secondary hover:bg-secondary hover:text-white focus:shadow-focus focus:shadow-secondary dark:hover:text-gray-900"
+              >
                 <svg
                   width="25"
                   height="24"
@@ -46,7 +49,7 @@ const Header = () => {
                 </svg>
                 <span> Get the code for this </span>
                 <ArrowRightIcon className="ml-1 h-4 w-4 flex-shrink-0" />
-              </button>
+              </a>
             </li>
             <li>
               <NextTailwindThemer />
